@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  DocKeeper
+
+  Created by Admin on 04.04.16.
+  Copyright © 2016 Anton Glezman. All rights reserved.
+*/
+
+"Save" = "Save";
+"Enter" = "Enter";
+"Enter your password" = "Enter your password";
+"Create new password" = "Create new password";
+"Need to write a password" = "Need to write a password";
+"Confirm password is incorrect" = "Confirm password is incorrect";
+"Password is incorrect" = "Password is incorrect";
+"Done" = "Done";
+"Edit" = "Edit";
+"New Document" = "New Document";
+"Document" = "Document";
+"Are you sure?" = "Are you sure?";
+"All data will be removed" = "All data will be removed";
+"Cancel" = "Cancel";
+"OK" = "OK";

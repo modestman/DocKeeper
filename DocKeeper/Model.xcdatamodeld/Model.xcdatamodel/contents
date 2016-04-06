@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F1605" minimumToolsVersion="Xcode 7.0">
+    <entity name="Document" representedClassName="Document" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="preview" optional="YES" attributeType="Binary" valueTransformerName="EncryptionTransformer" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pictures" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Picture" inverseName="document" inverseEntity="Picture" syncable="YES"/>
+    </entity>
+    <entity name="Picture" representedClassName="Picture" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Transformable" valueTransformerName="EncryptionTransformer" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="preview" optional="YES" attributeType="Transformable" valueTransformerName="EncryptionTransformer" syncable="YES"/>
+        <relationship name="document" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Document" inverseName="pictures" inverseEntity="Document" syncable="YES"/>
+    </entity>
+    <fetchRequest name="AllDocuments" entity="Document"/>
+    <elements>
+        <element name="Document" positionX="-3791" positionY="-1321" width="128" height="103"/>
+        <element name="Picture" positionX="-3492" positionY="-1311" width="128" height="103"/>
+    </elements>
+</model>
